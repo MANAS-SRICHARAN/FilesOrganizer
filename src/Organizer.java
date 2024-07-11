@@ -1,11 +1,13 @@
 import java.io.IOException;
 import java.nio.file.*;
 import java.util.ArrayList;
+import java.util.Scanner;
 import java.util.Arrays;
 
 public class Organizer {
     public static void main(String[] args) {
-        String path = "/users/manassricharanvarri/Desktop/";
+        Scanner scan = new Scanner(System.in);
+        String path = scan.nextLine();
         organize(path);
     }
 
