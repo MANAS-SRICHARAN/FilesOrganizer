@@ -42,6 +42,10 @@ public class Organizer {
         } catch (IOException e) {
             System.err.println(e);
         }
+        if(unique_extensions.length == 0){
+            System.out.println("The directory is already clean :)");
+            System.exit(0);
+        }
         //creating directories.
         ArrayList<String> directories_created = new ArrayList<String>();
         try {
